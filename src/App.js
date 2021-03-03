@@ -30,7 +30,7 @@ function App() {
       {/* <AddTodo submitFunction={submitFunction} addNameHandler={addNameHandler}/> */}
       <form onSubmit={submitFunction}>
         <input type="text" value={todoname} onChange={e => addNameHandler(e.target.value)} />
-        <button className="btn btn-success">Submit</button>
+        <button className="btn btn-primary">Submit</button>
       </form>
       <Todo todos={todo} deleteTodo={deleteTodo} />
 
